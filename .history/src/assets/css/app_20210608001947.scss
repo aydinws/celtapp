@@ -1,0 +1,16 @@
+@import 'code';
+
+body {
+    height: 100%;
+}
+
+.app {
+    height: 100%;
+    display: flex;
+
+    .content {
+        flex: 1;
+        background-color: $bgColor;
+    }
+}
+

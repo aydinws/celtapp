@@ -1,0 +1,11 @@
+@import '../assets/css/code';
+
+.side-bar {
+    width: 256px;
+    background-color: $mainBlue;
+    position: relative;
+
+    .side-bar-content {
+        position: fixed;
+    }
+}

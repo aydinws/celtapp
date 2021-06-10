@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+$mainBlue: #1E398F;
+
+html,
+body {
+    background-color: #E5E5E5;
+}
+
+body {
+    display: flex;
+}
+
+.side-bar {
+    background-color: $mainBlue;
+}
+
+.app-body {
+
+}

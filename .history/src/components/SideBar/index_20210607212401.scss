@@ -1,0 +1,43 @@
+@import '../../assets/css/code.scss';
+
+.side-bar {
+    width: 256px;
+    background-color: $mainBlue;
+    position: relative;
+
+    .side-bar-content {
+        width: 256px;
+        position: fixed;
+    }
+
+    .side-bar-content-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 35px;
+        align-items: center;
+
+        svg {
+            fill: #FFFFFF;
+        }
+    }
+
+    .side-bar-content-body {
+        ul {
+            margin-top: 83px;
+        }
+
+        svg {
+            width: 18px;
+            height: 18px;
+            fill: $blueTextColor;
+            margin-right: 10px;
+            margin-bottom: 3px;
+        }
+
+        a {
+            font-size: 15px;
+            color: $blueTextColor;
+            text-decoration: none;
+        }
+    }
+}

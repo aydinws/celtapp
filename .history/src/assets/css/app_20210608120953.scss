@@ -1,0 +1,16 @@
+@import 'code';
+
+body {
+    height: 100%;
+}
+
+.app {
+    height: 100%;
+    display: flex;
+
+    .content {
+        height: 100vh;
+        flex: 1;
+    }
+}
+

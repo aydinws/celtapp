@@ -1,0 +1,131 @@
+@import '../../assets/css/code.scss';
+
+.section {
+    margin: 35px 50px;
+
+    .content-body-head {
+        h3 {
+            font-size: 22px;
+            margin: 0 0 35px;
+        }
+    }
+
+    .content-body {
+        .card {
+            border-radius: 4px;
+            padding: 25px;
+            position: relative;
+
+            .card-header {
+                border-bottom: 0.5px solid #DEDEDE;
+                background-color: #FFFFFF;
+                padding: 0;
+            }
+
+            ul {
+                padding: 0;
+            }
+
+            h4 {
+                font-size: 19px;
+                padding: 0 0 10px;
+            }
+
+            ul li {
+                margin-top: 25px;
+            }
+
+            ul li h4 {
+                font-size: 15px;
+                text-transform: uppercase;
+                padding: 0;
+            }
+
+            ul li p {
+                font-size: 12px;
+                color: #878787;
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+
+            label {
+                p {
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    padding: 0;
+                }
+            }
+
+            a {
+                color: $mainBlue;
+                text-decoration: none;
+                font-size: 13px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                margin: 25px;
+                font-weight: bold;
+            }
+
+            svg {
+                fill: $mainBlue;
+                width: 7px;
+                padding: 0 0 2px;
+            }
+        }
+        
+    }
+}
+
+  .custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  .custom-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .custom-checkbox:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .custom-checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkmark:after {
+    left: 7px;
+    top: 5px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

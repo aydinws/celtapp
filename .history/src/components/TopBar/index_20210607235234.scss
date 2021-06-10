@@ -1,0 +1,19 @@
+@import '../../assets/css/code.scss';
+
+.top-bar {
+    background-color: #FFFFFF;
+    flex: 1;
+    height: 84px;
+    align-items: center;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        height: 84px;
+        align-items: center;
+
+        li {
+            margin: 24px 16px;
+        }
+    }
+}

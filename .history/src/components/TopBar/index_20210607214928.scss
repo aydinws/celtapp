@@ -1,0 +1,12 @@
+@import '../../assets/css/code.scss';
+
+.top-bar {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 84px;
+    position: fixed;
+
+    ul {
+        display: flex;
+    }
+}

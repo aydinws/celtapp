@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+$bgColor: #E5E5E5;
+$mainBlue: #1E398F;
+
+#root {
+    height: 100%;
+}
+
+.app {
+    display: flex;
+}
+
+.side-bar {
+    width: 256px;
+    background-color: $mainBlue;
+}
+
+.app-body {
+    flex: 1;
+    background-color: $bgColor;
+}

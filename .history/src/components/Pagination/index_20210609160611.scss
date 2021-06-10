@@ -1,0 +1,55 @@
+@import '../../assets/css/code.scss';
+
+.custom-pagination {
+    align-items: center;
+
+    p {
+        font-size: 15px;
+        font-weight: 500;
+
+        @media screen and (max-width:768px) {
+            text-align: center;
+        }
+    }
+
+    ul {
+        display: flex;
+        padding: 0;
+
+        @media screen and (max-width:768px) {
+            justify-content: center;
+        }
+
+        li {
+            background-color: #FFFFFF;
+            padding: 8px 12px;
+            font-size: 15px;
+            color: $grayColor;
+            cursor: pointer;
+            transition: background-color 300ms, color 300ms;
+
+            &:hover {
+                background-color: $orangeColor;
+                color: #FFFFFF;
+            }
+
+            &:last-child {
+                margin-left: 4px;
+            }
+
+            &:first-child {
+                margin-right: 4px;
+            }
+
+            svg {
+                height: 15px;
+                margin: 0 0 3px;
+            }
+        }
+
+        .active {
+            color: $orangeColor;
+            font-weight: 600;
+        }
+    }
+}

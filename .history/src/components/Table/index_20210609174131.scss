@@ -1,0 +1,118 @@
+@import '../../assets/css/code.scss';
+
+.custom-table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+
+    tr {
+        th {
+            font-weight: 500;
+            font-size: 14px;
+            padding: 25px 0 30px;
+            &:last-child {
+                text-align: center;
+            }
+            @media screen and (max-width:1024px) {
+                padding: 5px 0 10px;
+            }
+        }
+    }
+
+    tbody {
+        border-radius: 4px;
+        overflow: hidden;
+        
+        tr {
+            background-color: #FFFFFF;
+            transition: background-color 500ms;
+            
+
+            @media screen and (max-width:1024px) {
+                margin-bottom: 20px;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+
+            &:hover {
+                background-color: #F5F5F5;
+            }
+    
+            td {
+                padding: 25px;
+                color: $grayColor;
+                font-size: 14px;
+                border-bottom: 1px solid #DEDEDE;
+                @media screen and (min-width:768px) {
+                    &:last-child {
+                        text-align: center;
+                    }
+                }
+
+                svg {
+                    height: 14px;
+                }
+
+                span {
+                    display: none;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                @media screen and (max-width:768px) {
+                    display: flex;
+                    padding: 10px;
+
+                    &:last-child {
+                        border-bottom: 0;
+                        align-items: center;
+                    }
+
+                    span {
+                        width: 25%;
+                        display: block;
+                        font-weight: 500;
+                        color: #000000;
+                    }
+                }
+            }
+
+            &:last-child td {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        table, thead, tbody, th, td, tr { 
+            display: block; 
+        }
+        
+        thead tr { 
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        td { 
+            position: relative;
+            padding-left: 50%; 
+        }
+        
+        td:before { 
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%; 
+            padding-right: 10px; 
+            white-space: nowrap;
+        }
+    }
+}
+

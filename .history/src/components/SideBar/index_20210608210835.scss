@@ -1,0 +1,74 @@
+@import '../../assets/css/code.scss';
+
+.side-bar {
+    width: 256px;
+
+    .side-bar-content {
+        width: 256px;
+        height: 100%;
+        position: fixed;
+        background-color: $mainBlue;
+        
+        .p {
+            position: absolute;
+            bottom: 50px;
+            color: #FFFFFF;
+        }
+    }
+
+    .side-bar-content-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 35px;
+        align-items: center;
+
+        svg {
+            fill: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+
+    .side-bar-content-body {
+        ul {
+            padding: 0;
+            width: 100%;
+            margin-top: 83px;
+        }
+
+        li {
+            cursor: pointer;
+            padding: 0 33px;
+            margin: 10px 0;
+            transition: border-left 200ms;
+            border-left: 3px solid transparent;
+
+            svg {
+                width: 18px;
+                height: 18px;
+                fill: $blueTextColor;
+                margin-right: 10px;
+                margin-bottom: 3.5px;
+                transition: fill 400ms;
+            }
+    
+            a {
+                font-size: 14px;
+                color: $blueTextColor;
+                text-decoration: none;
+                transition: color 400ms;
+            }
+
+            &:hover {
+                border-left: 3px solid #FFFFFF;
+            }
+
+            &:hover svg {
+                fill: #FFFFFF;
+            }
+
+            &:hover a {
+                color: #FFFFFF;
+            }
+        }
+    }
+}

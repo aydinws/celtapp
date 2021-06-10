@@ -1,0 +1,17 @@
+@import '../../assets/css/code.scss';
+
+.side-bar {
+    width: 256px;
+    background-color: $mainBlue;
+    position: relative;
+
+    .side-bar-content {
+        position: fixed;
+    }
+
+    .side-bar-content-header {
+        display: flex;
+        justify-content: space-around;
+        padding: 35px 14px;
+    }
+}

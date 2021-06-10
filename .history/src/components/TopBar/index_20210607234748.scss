@@ -1,0 +1,11 @@
+@import '../../assets/css/code.scss';
+
+.top-bar {
+    background-color: #FFFFFF;
+    flex: 1;
+    height: 84px;
+
+    ul {
+        justify-content: flex-end;
+    }
+}

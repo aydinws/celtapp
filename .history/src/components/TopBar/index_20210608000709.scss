@@ -1,0 +1,24 @@
+@import '../../assets/css/code.scss';
+
+.top-bar {
+    background-color: #FFFFFF;
+    flex: 1;
+    height: 84px;
+    align-items: center;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        height: 84px;
+        align-items: center;
+        margin-right: 30px;
+
+        li {
+            margin: 24px 16px;
+        }
+
+        li:nth-child(2) span {
+            background-color: $grayColor;
+        }
+    }
+}

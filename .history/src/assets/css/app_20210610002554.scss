@@ -1,0 +1,82 @@
+@import 'code';
+
+* {
+    list-style: none;
+    text-decoration: none !important;
+    outline: none;
+}
+
+body {
+    height: 100%;
+    background-color: $bgColor !important;
+}
+
+.app {
+    height: 100%;
+    display: flex;
+
+    .content {
+        height: 100vh;
+        flex: 1;
+    }
+}
+
+.section {
+    margin: 35px 50px;
+
+    @media screen and (max-width:481px) {
+        margin: 35px 20px;
+    }
+
+    .content-body-head {
+
+        h3 {
+            font-size: 22px;
+            margin: 0 0 35px;
+        }
+
+        .search-input {
+            width: 278px;
+            height: 42px;
+            border-radius: 4px;
+            overflow: hidden;
+            float: right;
+
+            @media screen and (max-width:768px) {
+                margin: 0 0 20px;
+                width: 100%;
+            }
+
+            input {
+                width: 236px;
+                height: 42px;
+                padding: 0 0 0 20px;
+                border: 1px solid #FFFFFF;
+                background-color: #FFFFFF;
+                font-size: 15px;
+    
+                @media screen and (max-width:768px) {
+                    width: calc(100% - 42px);
+                }
+            }
+            
+            input::placeholder {
+                font-weight: 500;
+            }
+    
+            svg {
+                fill: $grayColor;
+                padding: 12px;
+                width: 42px;
+                height: 42px;
+                background-color: #FFFFFF;
+                margin: 0 0 4px;
+            }
+        }
+    }
+}
+
+.orange { fill: $orangeColor; color: $orangeColor !important; }
+.red { fill: $redColor; color: $redColor !important; }
+.green { fill: $greenColor; color: $greenColor !important; }
+.c-pointer { cursor: pointer; }
